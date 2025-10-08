@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 use Str;
 
 class DashboardController extends Controller
 {
-public function show()
+    public function show()
     {
 
         $articles = Article::with('user')
